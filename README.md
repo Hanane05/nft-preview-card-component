@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-Live Site URL: [Vercel](https://vercel.com/hanane05/nft-preview-card-component)
+Live Site URL: [Vercel](https://nft-preview-card-component-seven-theta.vercel.app/)
 
 ## My process
 
