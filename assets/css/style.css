@@ -14,7 +14,7 @@ body{
     font-family: 'Outfit', sans-serif;
 }
 
-article{
+main{
     display:flex;
     flex-direction: column;
     max-width: 290px;
@@ -26,7 +26,7 @@ article{
     box-shadow: 0px 0px 7px 3px hsl(218, 54%, 7%);
 }
 
-article> * + *{
+main> * + *{
     margin-top:20px;
 }
 
@@ -35,14 +35,14 @@ header{
   display: inline-block;
 }
 
-article>header>img{
+main>section>header>img{
     display:block;
     height: 100%;
     width:100%;
     border-radius: 10px;
 }
 
-article>header>div{
+main>section>header>div{
   position: absolute;
   top: 0;
   left: 0;
@@ -56,7 +56,7 @@ article>header>div{
   cursor: pointer;
 }
 
-article>header>div>img{
+main>section>header>div>img{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -66,7 +66,7 @@ article>header>div>img{
     
 }
 
-article>header:hover div{
+main>section>header:hover div{
 opacity: 1;
   pointer-events: auto;
 }
@@ -75,19 +75,19 @@ section> * + *{
     margin-top:20px;
 }
 
-article>section{
+main>section{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     border-bottom: 1px solid hsl(215, 32%, 27%);
 }
 
-article>section>h1{
+main>section>h1{
     font-size: 20px;
     font-weight:600;
 }
 
-article>section>div{
+main>section>div{
     display:flex;
     justify-content: space-between;
     margin-bottom: 15px;
@@ -95,55 +95,55 @@ article>section>div{
     align-items: center;
 }
 
-article>section>div>span{
+main>section>div>span{
     display:flex;
     align-items: center;
     justify-content: center;
 }
 
-article>section>div>span:first-child{
+main>section>div>span:first-child{
     color: hsl(178, 100%, 50%);
     font-weight: 400;
     font-size: 14px;
 }
 
-article>section>p, article>section>div>span:nth-child(2), article>footer>div>span:first-child{
+main>section>p, main>section>div>span:nth-child(2), main>footer>div>span:first-child{
     color:hsl(215, 51%, 70%);
     font-weight:300;
     font-size: 16px;
     
 }
 
-article>section>div>span{
+main>section>div>span{
     display:flex;
     align-items: center;
 }
 
-article>section>div>span:nth-child(2){
+main>section>div>span:nth-child(2){
     font-weight: 400;
     font-size: 14px;
 }
 
-article>section>div>span:nth-child(2)::before, article>section>div>span:first-child::before{
+main>section>div>span:nth-child(2)::before, main>section>div>span:first-child::before{
     content: url(/assets/images/icon-clock.svg);
     margin-right: 5px;
     display: flex;
     align-items: center;
 }
 
-article>section>div>span:first-child::before{
+main>section>div>span:first-child::before{
     content: url(/assets/images/icon-ethereum.svg);
     
 }
 
-article>footer{
+section>footer{
     display:flex;
     align-items: center;
     gap:15px;
     font-size: 16px;
 }
 
-article>footer>img{
+section>footer>img{
     height: 30px;
     width:30px;
     border: 1px solid white;
@@ -151,7 +151,7 @@ article>footer>img{
     border-radius: 50%;
 }
 
-article section h1:hover, article>footer>div>span:nth-child(2):hover{
+main section h1:hover, section>footer>div>span:nth-child(2):hover{
     color:hsl(178, 100%, 50%);
     cursor: pointer;
 }
